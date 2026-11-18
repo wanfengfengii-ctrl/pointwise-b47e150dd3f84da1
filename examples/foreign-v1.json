@@ -1,0 +1,12 @@
+{
+  "version": 1,
+  "partition": "P",
+  "revisions": ["C", "A", "B"],
+  "inventories": [
+    {"id": "foreign-inv", "revision": "A", "rows": [["ridge", "06:00", "G", 2]]}
+  ],
+  "deltas": [
+    {"id": "foreign-bc", "source": "B", "target": "C", "rows": [["ridge", "06:00", "G", -1], ["ridge", "07:00", "H", 1]]},
+    {"id": "foreign-ba", "source": "B", "target": "A", "rows": [["ridge", "06:00", "G", 1]]}
+  ]
+}
